@@ -45,3 +45,19 @@ $static-font-path: '/assets/fonts/webfonts';
   left: 0;
 }
 
+.image-selector {
+  height: 100vh;
+}
+
+.image-selector-header {
+  height: 150px;
+}
+
+.image-selector-content {
+  height: calc(100vh - 290px);
+  width: 100%
+}
+
+.image-selector-footer {
+  height: 80px;
+}

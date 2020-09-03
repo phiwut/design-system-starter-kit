@@ -12,31 +12,279 @@
   <link rel="stylesheet" href="/styles/index.css" />
 </head>
 <body>
-  <div class="slds-p-around--large slds-container--center slds-container--small landing">
-    <h1 class="slds-text-heading--large">
-      Welcome to the Design System Starter Kit
-    </h1>
-    <p class="slds-text-body--regular slds-m-vertical--large">A rapid prototyping environment using the <a href="https://www.lightningdesignsystem.com">Lightning Design System</a>, brought to you by <a href="https://twitter.com/SalesforceUX">Salesforce UX</a>.</p>
+  <div class="slds-var-p-around_large slds-container_center landing image-selector">
 
-    <img src="/assets/img-efficiency.svg" alt="" />
+    <div class=".image-selector-header">
+      <nav role="navigation" aria-label="Breadcrumbs">
+        <ol class="slds-breadcrumb slds-list_horizontal slds-wrap">
+          <li class="slds-breadcrumb__item">
+            <a href="javascript:void(0);">Mobi Header</a>
+          </li>
+          <li class="slds-breadcrumb__item">
+            <a href="javascript:void(0);">Bildauswahl</a>
+          </li>
+        </ol>
+      </nav>
 
-    <h2 class="slds-text-heading--medium slds-m-top--large">Get Started</h2>
-    <p class="slds-text-body--regular slds-m-top--large">Edit files in the <a href="https://github.com/salesforce-ux/design-system-starter-kit/tree/master/src"><code>src</code> directory</a> to start building your prototype.</p>
-    <p class="slds-text-body--regular slds-m-top--large">Lightning Design System component documentation and markup available at: <a href="https://www.lightningdesignsystem.com">https://www.lightningdesignsystem.com</a>.</p>
-    <hr />
+      <br>
 
-    <h2 class="slds-text-heading--medium slds-m-top--large">Example Prototype with Data</h2>
-    <p class="slds-text-body--regular slds-m-top--large slds-m-bottom--small">We’ve put together a prototype to show you what the starter kit is capable of, have a look!</p>
-    <p class="slds-text-body--regular slds-m-vertical--large">Data shown in this example comes from <a href="https://github.com/salesforce-ux/design-system-starter-kit/blob/master/src/views/data/example.json">views/data/example.json</a>. Check out the <a href="https://github.com/salesforce-ux/design-system-starter-kit/blob/master/src/views/data/README.md">README</a> to learn how we are injecting data with "gulp-nunjucks".</p>
-    <p><a href="/example.html" class="slds-button slds-button--brand">Example Prototype</a></p>
-    <hr />
+      <div class="slds-form-element">
+        <label class="slds-form-element__label" for="text-input-id-1">Schlagwortsuche</label>
+        <div class="slds-form-element__control slds-input-has-icon slds-input-has-icon_left">
+          <svg class="slds-icon slds-input__icon slds-input__icon_left slds-icon-text-default" aria-hidden="true">
+            <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#search"></use>
+          </svg>
+          <input type="text" id="text-input-id-1" placeholder="Schlagwort" class="slds-input" />
+        </div>
+      </div>
 
-    <h2 class="slds-text-heading--medium slds-m-top--large">Feedback and Questions</h2>
-    <p class="slds-text-body--regular slds-m-top--large slds-m-bottom--small">Ask questions about prototyping using the design system, report issues about the starter kit… <a href="https://github.com/salesforce-ux/design-system-starter-kit/">on the GitHub repository</a>.</p>
-    <hr />
+      <div class="slds-form-element">
+        <label class="slds-form-element__label" for="select-01">Seitenverhältnis</label>
+        <div class="slds-form-element__control">
+          <div class="slds-select_container">
+            <select class="slds-select" id="select-01">
+              <option value="">Flexibel</option>
+              <option>1:1</option>
+              <option>3:2</option>
+              <option>21:9</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </div>
 
-    <h2 class="slds-text-heading--medium slds-m-top--large">See Also</h2>
-    <p class="slds-text-body--regular slds-m-top--large slds-m-bottom--small">More comfortable designing in <a href="https://www.sketchapp.com/">Sketch</a>? Try the <a href="https://github.com/salesforce-ux/design-system-ui-kit/">Design System UI Kit</a>.</p>
+    <br>
+
+    <div class="slds-scrollable_y image-selector-content">
+      <ul class="slds-grid slds-wrap">
+        <li class="slds-col slds-size_1-of-2 slds-medium-size_1-of-3 slds-var-p-around_xxx-small">
+          <div class="slds-file slds-file_card">
+            <figure>
+              <a href="javascript:void(0);" class="slds-file__crop">
+                <span class="slds-assistive-text">Preview:</span>
+                <img src="/assets/images/placeholder-img@16x9.jpg" alt="Description of the image" />
+              </a>
+            </figure>
+          </div>
+        </li>
+        <li class="slds-col slds-size_1-of-2 slds-medium-size_1-of-3 slds-var-p-around_xxx-small">
+          <div class="slds-file slds-file_card">
+            <figure>
+              <a href="javascript:void(0);" class="slds-file__crop">
+                <span class="slds-assistive-text">Preview:</span>
+                <img src="/assets/images/placeholder-img@16x9.jpg" alt="Description of the image" />
+              </a>
+            </figure>
+          </div>
+        </li>
+        <li class="slds-col slds-size_1-of-2 slds-medium-size_1-of-3 slds-var-p-around_xxx-small">
+          <div class="slds-file slds-file_card">
+            <figure>
+              <a href="javascript:void(0);" class="slds-file__crop">
+                <span class="slds-assistive-text">Preview:</span>
+                <img src="/assets/images/placeholder-img@16x9.jpg" alt="Description of the image" />
+              </a>
+            </figure>
+          </div>
+        </li>
+        <li class="slds-col slds-size_1-of-2 slds-medium-size_1-of-3 slds-var-p-around_xxx-small">
+          <div class="slds-file slds-file_card">
+            <figure>
+              <a href="javascript:void(0);" class="slds-file__crop">
+                <span class="slds-assistive-text">Preview:</span>
+                <img src="/assets/images/placeholder-img@16x9.jpg" alt="Description of the image" />
+              </a>
+            </figure>
+          </div>
+        </li>
+        <li class="slds-col slds-size_1-of-2 slds-medium-size_1-of-3 slds-var-p-around_xxx-small">
+          <div class="slds-file slds-file_card">
+            <figure>
+              <a href="javascript:void(0);" class="slds-file__crop">
+                <span class="slds-assistive-text">Preview:</span>
+                <img src="/assets/images/placeholder-img@16x9.jpg" alt="Description of the image" />
+              </a>
+            </figure>
+          </div>
+        </li>
+        <li class="slds-col slds-size_1-of-2 slds-medium-size_1-of-3 slds-var-p-around_xxx-small">
+          <div class="slds-file slds-file_card">
+            <figure>
+              <a href="javascript:void(0);" class="slds-file__crop">
+                <span class="slds-assistive-text">Preview:</span>
+                <img src="/assets/images/placeholder-img@16x9.jpg" alt="Description of the image" />
+              </a>
+            </figure>
+          </div>
+        </li>
+        <li class="slds-col slds-size_1-of-2 slds-medium-size_1-of-3 slds-var-p-around_xxx-small">
+          <div class="slds-file slds-file_card">
+            <figure>
+              <a href="javascript:void(0);" class="slds-file__crop">
+                <span class="slds-assistive-text">Preview:</span>
+                <img src="/assets/images/placeholder-img@16x9.jpg" alt="Description of the image" />
+              </a>
+            </figure>
+          </div>
+        </li>
+        <li class="slds-col slds-size_1-of-2 slds-medium-size_1-of-3 slds-var-p-around_xxx-small">
+          <div class="slds-file slds-file_card">
+            <figure>
+              <a href="javascript:void(0);" class="slds-file__crop">
+                <span class="slds-assistive-text">Preview:</span>
+                <img src="/assets/images/placeholder-img@16x9.jpg" alt="Description of the image" />
+              </a>
+            </figure>
+          </div>
+        </li>
+        <li class="slds-col slds-size_1-of-2 slds-medium-size_1-of-3 slds-var-p-around_xxx-small">
+          <div class="slds-file slds-file_card">
+            <figure>
+              <a href="javascript:void(0);" class="slds-file__crop">
+                <span class="slds-assistive-text">Preview:</span>
+                <img src="/assets/images/placeholder-img@16x9.jpg" alt="Description of the image" />
+              </a>
+            </figure>
+          </div>
+        </li>
+        <li class="slds-col slds-size_1-of-2 slds-medium-size_1-of-3 slds-var-p-around_xxx-small">
+          <div class="slds-file slds-file_card">
+            <figure>
+              <a href="javascript:void(0);" class="slds-file__crop">
+                <span class="slds-assistive-text">Preview:</span>
+                <img src="/assets/images/placeholder-img@16x9.jpg" alt="Description of the image" />
+              </a>
+            </figure>
+          </div>
+        </li>
+        <li class="slds-col slds-size_1-of-2 slds-medium-size_1-of-3 slds-var-p-around_xxx-small">
+          <div class="slds-file slds-file_card">
+            <figure>
+              <a href="javascript:void(0);" class="slds-file__crop">
+                <span class="slds-assistive-text">Preview:</span>
+                <img src="/assets/images/placeholder-img@16x9.jpg" alt="Description of the image" />
+              </a>
+            </figure>
+          </div>
+        </li>
+        <li class="slds-col slds-size_1-of-2 slds-medium-size_1-of-3 slds-var-p-around_xxx-small">
+          <div class="slds-file slds-file_card">
+            <figure>
+              <a href="javascript:void(0);" class="slds-file__crop">
+                <span class="slds-assistive-text">Preview:</span>
+                <img src="/assets/images/placeholder-img@16x9.jpg" alt="Description of the image" />
+              </a>
+            </figure>
+          </div>
+        </li>
+        <li class="slds-col slds-size_1-of-2 slds-medium-size_1-of-3 slds-var-p-around_xxx-small">
+          <div class="slds-file slds-file_card">
+            <figure>
+              <a href="javascript:void(0);" class="slds-file__crop">
+                <span class="slds-assistive-text">Preview:</span>
+                <img src="/assets/images/placeholder-img@16x9.jpg" alt="Description of the image" />
+              </a>
+            </figure>
+          </div>
+        </li>
+        <li class="slds-col slds-size_1-of-2 slds-medium-size_1-of-3 slds-var-p-around_xxx-small">
+          <div class="slds-file slds-file_card">
+            <figure>
+              <a href="javascript:void(0);" class="slds-file__crop">
+                <span class="slds-assistive-text">Preview:</span>
+                <img src="/assets/images/placeholder-img@16x9.jpg" alt="Description of the image" />
+              </a>
+            </figure>
+          </div>
+        </li>
+        <li class="slds-col slds-size_1-of-2 slds-medium-size_1-of-3 slds-var-p-around_xxx-small">
+          <div class="slds-file slds-file_card">
+            <figure>
+              <a href="javascript:void(0);" class="slds-file__crop">
+                <span class="slds-assistive-text">Preview:</span>
+                <img src="/assets/images/placeholder-img@16x9.jpg" alt="Description of the image" />
+              </a>
+            </figure>
+          </div>
+        </li>
+        <li class="slds-col slds-size_1-of-2 slds-medium-size_1-of-3 slds-var-p-around_xxx-small">
+          <div class="slds-file slds-file_card">
+            <figure>
+              <a href="javascript:void(0);" class="slds-file__crop">
+                <span class="slds-assistive-text">Preview:</span>
+                <img src="/assets/images/placeholder-img@16x9.jpg" alt="Description of the image" />
+              </a>
+            </figure>
+          </div>
+        </li>
+        <li class="slds-col slds-size_1-of-2 slds-medium-size_1-of-3 slds-var-p-around_xxx-small">
+          <div class="slds-file slds-file_card">
+            <figure>
+              <a href="javascript:void(0);" class="slds-file__crop">
+                <span class="slds-assistive-text">Preview:</span>
+                <img src="/assets/images/placeholder-img@16x9.jpg" alt="Description of the image" />
+              </a>
+            </figure>
+          </div>
+        </li>
+        <li class="slds-col slds-size_1-of-2 slds-medium-size_1-of-3 slds-var-p-around_xxx-small">
+          <div class="slds-file slds-file_card">
+            <figure>
+              <a href="javascript:void(0);" class="slds-file__crop">
+                <span class="slds-assistive-text">Preview:</span>
+                <img src="/assets/images/placeholder-img@16x9.jpg" alt="Description of the image" />
+              </a>
+            </figure>
+          </div>
+        </li>
+        <li class="slds-col slds-size_1-of-2 slds-medium-size_1-of-3 slds-var-p-around_xxx-small">
+          <div class="slds-file slds-file_card">
+            <figure>
+              <a href="javascript:void(0);" class="slds-file__crop">
+                <span class="slds-assistive-text">Preview:</span>
+                <img src="/assets/images/placeholder-img@16x9.jpg" alt="Description of the image" />
+              </a>
+            </figure>
+          </div>
+        </li>
+        <li class="slds-col slds-size_1-of-2 slds-medium-size_1-of-3 slds-var-p-around_xxx-small">
+          <div class="slds-file slds-file_card">
+            <figure>
+              <a href="javascript:void(0);" class="slds-file__crop">
+                <span class="slds-assistive-text">Preview:</span>
+                <img src="/assets/images/placeholder-img@16x9.jpg" alt="Description of the image" />
+              </a>
+            </figure>
+          </div>
+        </li>
+      </ul>
+
+      <br>
+
+      <div class="slds-align_absolute-center" style="height:4rem">
+        <div role="status" class="slds-spinner slds-spinner_medium slds-spinner_inline">
+          <span class="slds-assistive-text">Loading</span>
+          <div class="slds-spinner__dot-a"></div>
+          <div class="slds-spinner__dot-b"></div>
+        </div>
+      </div>
+
+    </div>
+
+    <br>
+
+    <div class="slds-docked-form-footer slds-var-p-around_large image-selector-footer">
+
+      <div class="slds-grid slds-gutters">
+        <div class="slds-col slds-size_2-of-3">
+          <label class="slds-form-element__label">3_Stall_V8B4373.jpg</label>
+        </div>
+        <div class="slds-col slds-size_1-of-3">
+          <button type="button" class="slds-button slds-button_brand">Auswählen</button>
+        </div>
+      </div>
+
+    </div>
 
   </div>
 
